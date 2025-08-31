@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <style>
+    body {
+      background-color: lightblue;
+      font-style: italic;
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: darkblue;
+      text-align: center;
+      font-style: normal;
+      font-size: 32px;
+      margin-top: 20px;
+    }
+
+    h2 {
+      color: darkblue;
+      font-style: normal;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      border: 2px solid darkblue;
+      padding: 10px;
+      margin: 20px auto;
+      width: fit-content;
+      background-color: white;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: darkblue;
+      font-weight: bold;
+    }
+
+    main {
+      width: 80%;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 15px;
+    }
+
+    /* Dados pessoais */
+    .dados {
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+
+    /* Formulário compacto */
+    form label {
+      display: block;
+      margin-top: 8px;
+    }
+
+    input, textarea {
+      width: 95%;
+      padding: 6px;
+      margin-top: 3px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 6px 12px;
+      margin-right: 10px;
+      background-color: darkblue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: navy;
+    }
+
+    a {
+      color: darkblue;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contato</h1>
+    <nav>
+      <ul>
+        <li><a href="meuportfolio.html">Início</a></li>
+        <li><a href="meushobbies.html">Hobbie</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="trabalhos.html">Meus Trabalhos</a></li>
+       
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Meus Dados</h2>
+      <div class="dados">
+        <p><strong>Nome:</strong> Iasmin Mara Kubis</p>
+        <p><strong>Email:</strong> <a href="mailto:yasminkubis2010@hotmail.com">yasminkubis2010@hotmail.com</a></p>
+        <p><strong>Telefone:</strong> <a href="tel:+5542991266557">(42) 99126-6557</a></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Entre em Contato</h2>
+      <form action="mailto:yasminkubis2010@hotmail.com" method="post" enctype="text/plain">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <div>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
+
+
+
